@@ -1,10 +1,12 @@
 package com.sikar.malaiDI;
 
+import com.sikar.malaiDI.annotations.Component_m;
+
 @Component_m
 class UserService_m {
-    private final com.sikar.malaiDI.UserRepository_m userRepository;
+    private final UserRepository_m userRepository;
 
-    public UserService_m(com.sikar.malaiDI.UserRepository_m userRepository) {
+    public UserService_m(UserRepository_m userRepository) {
         this.userRepository = userRepository;
     }
 
