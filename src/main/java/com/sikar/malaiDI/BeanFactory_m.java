@@ -21,7 +21,7 @@ public class BeanFactory_m {
         beanDefinitions.put(beanDefinitionM.getBeanClass().getSimpleName(), beanDefinitionM);
     }
 
-    public <T> T getBean(Class<?> beanClass) throws Exception {
+    public <T> T getBean(Class<T> beanClass) throws Exception {
         var beanName = beanClass.getSimpleName();
         // dependency not resolved exception
         if (!beanDefinitions.containsKey(beanName)) {

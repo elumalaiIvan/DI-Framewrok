@@ -1,5 +1,6 @@
 package com.sikar.malaiDI;
 
+@Component_m
 class UserService_m {
     private final com.sikar.malaiDI.UserRepository_m userRepository;
 
@@ -9,6 +10,10 @@ class UserService_m {
 
     public void addUser(String username) {
         userRepository.save(username);
+    }
+
+    public String getUser() {
+        return "Elumalai";
     }
 }
 
